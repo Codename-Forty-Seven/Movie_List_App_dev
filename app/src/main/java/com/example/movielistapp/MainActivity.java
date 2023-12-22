@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView rv_with_movies;
     private List<Movie> movieList;
     private MoviesAdapter moviesAdapter;
-    private RecyclerView.LayoutManager movieLayoutManager;
     private SharedPreferences prefs;
     private SharedPreferences.Editor editor;
 
@@ -32,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initAllComponents();
+
 
     }
 

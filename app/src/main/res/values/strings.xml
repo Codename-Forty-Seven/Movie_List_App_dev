@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Movie List App</string>
     <string name="txt_on_my_watch_list">On my watchlist</string>
-    <string name="txt_add_to_watch_list">Add to watchlist</string>
+    <string name="txt_add_to_watch_list">+ Add to watchlist</string>
     <string name="txt_remove_from_watch_list">Remove from watchlist</string>
     <string name="txt_watch_trailer">Watch trailer</string>
     <string name="txt_back_to_movies_list">Movies</string>
@@ -13,12 +13,14 @@
 
     <string name="txt_name_movie_tenet">Tenet (2020)</string>
     <string name="txt_short_info_movie_tenet">1 h 20 min - Action, Sci-Fi</string>
+    <string name="txt_short_info_genre_movie_tenet">Action, Sci-Fi</string>
     <string name="txt_description_movie_tenet">Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time</string>
     <string name="txt_link_movie_tenet">https://www.youtube.com/watch?v=LdOM0x0XDMo</string>
     <string name="txt_release_date_movie_tenet">3 September 2020</string>
 
     <string name="txt_name_movie_spider">Spider-Man: Into the Spider-Verse (2018)</string>
     <string name="txt_short_info_movie_spider">1 h 57 min - Action, Animation, Adventure</string>
+    <string name="txt_short_info_genre_movie_spider">Action, Animation, Adventure</string>
     <string name="txt_description_movie_spider">Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities</string>
     <string name="txt_link_movie_spider">https://www.youtube.com/watch?v=tg52up16eq0</string>
     <string name="txt_release_date_movie_spider">14 December 2018</string>

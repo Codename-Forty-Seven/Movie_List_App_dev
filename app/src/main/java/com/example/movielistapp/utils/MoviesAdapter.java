@@ -6,6 +6,7 @@ import static com.example.movielistapp.utils.Constants.NAME_MOVIE;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,7 +68,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
             img_v_photo_movie = itemView.findViewById(R.id.img_v_photo_movie);
 
             tv_add_on_my_watch_list.setOnClickListener(v -> {
-                tv_name_movie.setText("Hello!");
+                tv_add_on_my_watch_list.setVisibility(View.GONE);
             });
 
             itemView.setOnClickListener(view -> {
@@ -75,7 +76,6 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
                 Intent openInfoAboutMovie = new Intent(context, AboutMovieActivity.class);
                 openInfoAboutMovie.putExtra(NAME_MOVIE, tv_name_movie.getText().toString().trim());
                 openInfoAboutMovie.putExtra(ADD_TO_WATCH_LIST, tv_add_on_my_watch_list.getVisibility());
-                openInfoAboutMovie.putExtra(MOVIE_POSTER_ID, img_v_photo_movie.getId());
                 context.startActivity(openInfoAboutMovie);
             });
         }
