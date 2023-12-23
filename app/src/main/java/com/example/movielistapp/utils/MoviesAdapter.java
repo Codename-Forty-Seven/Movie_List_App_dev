@@ -3,7 +3,9 @@ package com.example.movielistapp.utils;
 import static com.example.movielistapp.utils.Constants.ADD_TO_WATCH_LIST;
 import static com.example.movielistapp.utils.Constants.MOVIE_POSTER_ID;
 import static com.example.movielistapp.utils.Constants.NAME_MOVIE;
+import static com.example.movielistapp.utils.Constants.NAME_PREF;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -25,8 +27,11 @@ import java.util.List;
 
 public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewHolder> {
     private List<Movie> movies = new ArrayList<>();
+    private final Activity activity;
+    private SharedPreferences prefs;
 
-    public MoviesAdapter(List<Movie> movies) {
+    public MoviesAdapter(Activity activity, List<Movie> movies) {
+        this.activity = activity;
         this.movies = movies;
     }
 
@@ -43,10 +48,10 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
 
         holder.tv_name_movie.setText(movie.getNameMovie());
         holder.tv_short_info_movie.setText(movie.getShortInfo());
-        if (!movie.isAddedToWatchList())
-            holder.tv_add_on_my_watch_list.setVisibility(View.VISIBLE);
+        if (movie.isAddedToWatchList())
+            holder.tv_add_on_my_watch_list.setVisibility(View.INVISIBLE);
         else
-            holder.tv_add_on_my_watch_list.setVisibility(View.GONE);
+            holder.tv_add_on_my_watch_list.setVisibility(View.VISIBLE);
         holder.img_v_photo_movie.setImageDrawable(movie.getMoviePoster());
     }
 

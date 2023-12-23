@@ -8,8 +8,10 @@
     tools:context=".activities.AboutMovieActivity">
 
     <ImageView
-        android:id="@+id/ll_back_to_movies"
+        android:id="@+id/img_back_to_movies"
         android:layout_width="70dp"
+        android:clickable="true"
+        android:focusable="true"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginStart="8dp"
@@ -26,7 +28,7 @@
         android:background="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ll_back_to_movies" />
+        app:layout_constraintTop_toBottomOf="@+id/img_back_to_movies" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"

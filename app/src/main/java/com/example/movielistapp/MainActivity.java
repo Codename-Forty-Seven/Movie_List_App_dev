@@ -6,7 +6,11 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -32,7 +36,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initAllComponents();
 
+        tv_btn_sort.setOnClickListener(v -> {
+            showPopupMenu(v);
+        });
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        moviesAdapter.notifyDataSetChanged();
     }
 
     private void initAllComponents() {
@@ -42,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         rv_with_movies = findViewById(R.id.rv_with_movies);
         rv_with_movies.setLayoutManager(new LinearLayoutManager(this));
         movieList = createMovieList();
-        moviesAdapter = new MoviesAdapter(movieList);
+        moviesAdapter = new MoviesAdapter(this, movieList);
         rv_with_movies.setAdapter(moviesAdapter);
     }
 
@@ -65,5 +78,30 @@ public class MainActivity extends AppCompatActivity {
         movies.add(guardians);
         movies.add(avengers);
         return movies;
+    }
+
+    private void showPopupMenu(View view) {
+        PopupMenu popupMenu = new PopupMenu(this, view);
+        popupMenu.getMenuInflater().inflate(R.menu.sort_menu, popupMenu.getMenu());
+
+        // Обробник натискання на елемент меню
+        popupMenu.setOnMenuItemClickListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.sortByName:
+                    // Логіка сортування за іменем
+//                    yourTextView.setText("Сортування за іменем");
+                    Toast.makeText(this, "Сортування за іменем", Toast.LENGTH_SHORT).show();
+                    return true;
+                case R.id.sortByReleaseDate:
+                    // Логіка сортування за датою релізу
+//                    yourTextView.setText("Сортування за датою релізу");
+                    Toast.makeText(this, "Сортування за датою релізу", Toast.LENGTH_SHORT).show();
+                    return true;
+                default:
+                    return false;
+            }
+        });
+
+        popupMenu.show();
     }
 }

@@ -6,10 +6,13 @@
     <string name="txt_watch_trailer">Watch trailer</string>
     <string name="txt_back_to_movies_list">Movies</string>
     <string name="txt_sort">Sort</string>
+    <string name="txt_title">Title</string>
+    <string name="txt_released_date_2">Released Date</string>
     <string name="txt_header_short_description">Short Description</string>
     <string name="txt_header_details">Details</string>
     <string name="txt_genre">Genre:</string>
     <string name="txt_released_date">Released date:</string>
+    <string name="txt_rating">/10</string>
 
     <string name="txt_name_movie_tenet">Tenet (2020)</string>
     <string name="txt_short_info_movie_tenet">1 h 20 min - Action, Sci-Fi</string>
@@ -17,6 +20,7 @@
     <string name="txt_description_movie_tenet">Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time</string>
     <string name="txt_link_movie_tenet">https://www.youtube.com/watch?v=LdOM0x0XDMo</string>
     <string name="txt_release_date_movie_tenet">3 September 2020</string>
+    <string name="txt_rating_movie_tenet">7.8</string>
 
     <string name="txt_name_movie_spider">Spider-Man: Into the Spider-Verse (2018)</string>
     <string name="txt_short_info_movie_spider">1 h 57 min - Action, Animation, Adventure</string>
@@ -24,6 +28,7 @@
     <string name="txt_description_movie_spider">Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities</string>
     <string name="txt_link_movie_spider">https://www.youtube.com/watch?v=tg52up16eq0</string>
     <string name="txt_release_date_movie_spider">14 December 2018</string>
+    <string name="txt_rating_movie_spider">8.4</string>
 
     <string name="txt_name_movie_knives_out">Knives out (2018)</string>
     <string name="txt_short_info_movie_knives_out">2 h 10 min - Comedy, Crime, Drama</string>
@@ -31,6 +36,7 @@
     <string name="txt_description_movie_knives_out">A detective investigates the death of a patriarch of an eccentric, combative family</string>
     <string name="txt_link_movie_knives_out">https://www.youtube.com/watch?v=qGqiHJTsRkQ</string>
     <string name="txt_release_date_movie_knives_out">27 November 2019</string>
+    <string name="txt_rating_movie_knives_out">7.9</string>
 
     <string name="txt_name_movie_guardians_of_the_galaxy">Guardians of the Galaxy (2014)</string>
     <string name="txt_short_info_movie_guardians_of_the_galaxy">2 h 1 min - Action, Adventure, Comedy</string>
@@ -38,6 +44,7 @@
     <string name="txt_description_movie_guardians_of_the_galaxy">A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe</string>
     <string name="txt_link_movie_guardians_of_the_galaxy">https://www.youtube.com/watch?v=d96cjJhvlMA</string>
     <string name="txt_release_date_movie_guardians_of_the_galaxy">1 August 2014</string>
+    <string name="txt_rating_movie_guardians_of_the_galaxy">8.0</string>
 
     <string name="txt_name_movie_avengers">Avengers: Age of Ultron (2015)</string>
     <string name="txt_short_info_movie_avengers">2 h 21 min - Sci-Fi, Action, Adventure</string>
@@ -45,4 +52,5 @@
     <string name="txt_description_movie_avengers">When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it\'s up to Earth\'s mightiest heroes to stop the villainous Ultron from enacting his terrible plan</string>
     <string name="txt_link_movie_avengers">https://www.youtube.com/watch?v=tmeOjFno6Do</string>
     <string name="txt_release_date_movie_avengers">1 May 2015</string>
+    <string name="txt_rating_movie_avengers">7.3</string>
 </resources>
