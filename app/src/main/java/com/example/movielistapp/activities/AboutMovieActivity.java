@@ -1,5 +1,6 @@
 package com.example.movielistapp.activities;
 
+import static android.content.ContentValues.TAG;
 import static com.example.movielistapp.utils.Constants.ADD_TO_WATCH_LIST;
 import static com.example.movielistapp.utils.Constants.ADD_TO_WATCH_LIST_AVENGERS;
 import static com.example.movielistapp.utils.Constants.ADD_TO_WATCH_LIST_GUARDIANS;
@@ -18,6 +19,7 @@ import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -81,7 +83,9 @@ public class AboutMovieActivity extends AppCompatActivity {
                 img_v_current_movie.setImageDrawable(img);
                 tv_name_current_movie.setText(comes.getStringExtra(NAME_MOVIE));
                 tv_rating_current_movie.setText(getText(R.string.txt_rating_movie_tenet));
-                if (comes.getIntExtra(ADD_TO_WATCH_LIST, View.VISIBLE) == View.GONE)
+                boolean isAddToWatchList = prefs.getBoolean(ADD_TO_WATCH_LIST_TENET, false);
+                Log.d(TAG, "getIntentsFromName: " + isAddToWatchList);
+                if (isAddToWatchList)
                     tv_btn_remove_from_watch_list.setText(getString(R.string.txt_remove_from_watch_list));
                 else
                     tv_btn_remove_from_watch_list.setText(getString(R.string.txt_add_to_watch_list));
@@ -95,7 +99,8 @@ public class AboutMovieActivity extends AppCompatActivity {
                 img_v_current_movie.setImageDrawable(img);
                 tv_name_current_movie.setText(comes.getStringExtra(NAME_MOVIE));
                 tv_rating_current_movie.setText(getText(R.string.txt_rating_movie_spider));
-                if (comes.getIntExtra(ADD_TO_WATCH_LIST, View.VISIBLE) == View.GONE)
+                boolean isAddToWatchList = prefs.getBoolean(ADD_TO_WATCH_LIST_SPIDER, false);
+                if (isAddToWatchList)
                     tv_btn_remove_from_watch_list.setText(getString(R.string.txt_remove_from_watch_list));
                 else
                     tv_btn_remove_from_watch_list.setText(getString(R.string.txt_add_to_watch_list));
@@ -109,7 +114,8 @@ public class AboutMovieActivity extends AppCompatActivity {
                 img_v_current_movie.setImageDrawable(img);
                 tv_name_current_movie.setText(comes.getStringExtra(NAME_MOVIE));
                 tv_rating_current_movie.setText(getText(R.string.txt_rating_movie_knives_out));
-                if (comes.getIntExtra(ADD_TO_WATCH_LIST, View.VISIBLE) == View.GONE)
+                boolean isAddToWatchList = prefs.getBoolean(ADD_TO_WATCH_LIST_KNIVES, false);
+                if (isAddToWatchList)
                     tv_btn_remove_from_watch_list.setText(getString(R.string.txt_remove_from_watch_list));
                 else
                     tv_btn_remove_from_watch_list.setText(getString(R.string.txt_add_to_watch_list));
@@ -123,7 +129,8 @@ public class AboutMovieActivity extends AppCompatActivity {
                 img_v_current_movie.setImageDrawable(img);
                 tv_name_current_movie.setText(comes.getStringExtra(NAME_MOVIE));
                 tv_rating_current_movie.setText(getText(R.string.txt_rating_movie_guardians_of_the_galaxy));
-                if (comes.getIntExtra(ADD_TO_WATCH_LIST, View.VISIBLE) == View.GONE)
+                boolean isAddToWatchList = prefs.getBoolean(ADD_TO_WATCH_LIST_GUARDIANS, false);
+                if (isAddToWatchList)
                     tv_btn_remove_from_watch_list.setText(getString(R.string.txt_remove_from_watch_list));
                 else
                     tv_btn_remove_from_watch_list.setText(getString(R.string.txt_add_to_watch_list));
@@ -137,7 +144,8 @@ public class AboutMovieActivity extends AppCompatActivity {
                 img_v_current_movie.setImageDrawable(img);
                 tv_name_current_movie.setText(comes.getStringExtra(NAME_MOVIE));
                 tv_rating_current_movie.setText(getText(R.string.txt_rating_movie_avengers));
-                if (comes.getIntExtra(ADD_TO_WATCH_LIST, View.VISIBLE) == View.GONE)
+                boolean isAddToWatchList = prefs.getBoolean(ADD_TO_WATCH_LIST_AVENGERS, false);
+                if (isAddToWatchList)
                     tv_btn_remove_from_watch_list.setText(getString(R.string.txt_remove_from_watch_list));
                 else
                     tv_btn_remove_from_watch_list.setText(getString(R.string.txt_add_to_watch_list));

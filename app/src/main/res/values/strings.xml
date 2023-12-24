@@ -8,6 +8,7 @@
     <string name="txt_sort">Sort</string>
     <string name="txt_title">Title</string>
     <string name="txt_released_date_2">Released Date</string>
+    <string name="txt_cancel_sort">Cancel</string>
     <string name="txt_header_short_description">Short Description</string>
     <string name="txt_header_details">Details</string>
     <string name="txt_genre">Genre:</string>

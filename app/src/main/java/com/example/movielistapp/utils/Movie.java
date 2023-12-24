@@ -3,15 +3,16 @@ package com.example.movielistapp.utils;
 import android.graphics.drawable.Drawable;
 
 public class Movie {
-    private String nameMovie, shortInfo;
+    private String nameMovie, shortInfo, releaseDate;
     private boolean addedToWatchList;
     private Drawable moviePoster;
 
     public Movie() {
     }
 
-    public Movie(Drawable moviePoster, String nameMovie, String shortInfo, boolean addedToWatchList) {
+    public Movie(Drawable moviePoster, String nameMovie, String releaseDate, String shortInfo, boolean addedToWatchList) {
         this.nameMovie = nameMovie;
+        this.releaseDate = releaseDate;
         this.shortInfo = shortInfo;
         this.moviePoster = moviePoster;
         this.addedToWatchList = addedToWatchList;
@@ -29,10 +30,6 @@ public class Movie {
         return addedToWatchList;
     }
 
-    public void setAddedToWatchList(boolean addedToWatchList) {
-        this.addedToWatchList = addedToWatchList;
-    }
-
     public Drawable getMoviePoster() {
         return moviePoster;
     }
@@ -41,7 +38,11 @@ public class Movie {
         return shortInfo;
     }
 
-    public void setShortInfo(String shortInfo) {
-        this.shortInfo = shortInfo;
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
     }
 }

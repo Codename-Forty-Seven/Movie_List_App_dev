@@ -1,5 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
     <style name="Base.Theme.MovieListApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@android:color/transparent</item>
@@ -7,9 +8,9 @@
         <item name="android:statusBarColor">@android:color/white</item>
         <item name="android:windowBackground">@android:color/white</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:windowLightNavigationBar">false</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">false
+        </item>
+        <item name="android:windowLightStatusBar">true
+        </item>
     </style>
-
-    <style name="Theme.MovieListApp" parent="Base.Theme.MovieListApp" />
 </resources>
